@@ -1,0 +1,52 @@
+//------------------------------------------------------------
+// = GLOBAL
+//------------------------------------------------------------
+@import "bs"; 
+@import "variables";
+@import "typography";
+@import "buttons";
+@import "forms";
+@import "css3-mixins";
+
+body {text-size-adjust: 100%; -webkit-overflow-scrolling: touch; background: $color-base-gray-ton-1;}
+body, input, select, textarea {font: 13px $font; color: $color-base-black;}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-family: $font-bold;}
+a {color: $color-base-black; text-decoration: none;}
+a, input, select, textarea, :focus {outline: none !important;}
+input, select, textarea, :focus {-webkit-appearance: none;}
+img {border: 0;}
+figure {margin: 0;}
+ul {margin: 0; padding: 0; list-style: none;}
+textarea {resize: none;}
+strong {font-family: $font-bold;}
+
+::selection {
+	color: #fff;
+	background: $color-base-black;
+}
+::-moz-selection {
+	color: #fff;
+	background: $color-base-black;
+}
+
+
+//------------------------------------------------------------
+// = LAYOUT
+//------------------------------------------------------------
+
+
+
+//------------------------------------------------------------
+// = MEDIA QUERIES
+//------------------------------------------------------------
+@media screen and (max-width: $screen-md-max) {
+	@import "tablet-landscape";
+}
+
+@media screen and (max-width: $screen-sm-max) {
+	@import "tablet-portrait";
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	@import "phone";
+}
